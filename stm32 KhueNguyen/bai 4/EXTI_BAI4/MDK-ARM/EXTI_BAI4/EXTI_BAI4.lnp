@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"exti_bai4\startup_stm32f103xb.o"
+"exti_bai4\main.o"
+"exti_bai4\stm32f1xx_it.o"
+"exti_bai4\stm32f1xx_hal_msp.o"
+"exti_bai4\stm32f1xx_hal_gpio_ex.o"
+"exti_bai4\stm32f1xx_hal_tim.o"
+"exti_bai4\stm32f1xx_hal_tim_ex.o"
+"exti_bai4\stm32f1xx_hal.o"
+"exti_bai4\stm32f1xx_hal_rcc.o"
+"exti_bai4\stm32f1xx_hal_rcc_ex.o"
+"exti_bai4\stm32f1xx_hal_gpio.o"
+"exti_bai4\stm32f1xx_hal_dma.o"
+"exti_bai4\stm32f1xx_hal_cortex.o"
+"exti_bai4\stm32f1xx_hal_pwr.o"
+"exti_bai4\stm32f1xx_hal_flash.o"
+"exti_bai4\stm32f1xx_hal_flash_ex.o"
+"exti_bai4\stm32f1xx_hal_exti.o"
+"exti_bai4\system_stm32f1xx.o"
+--strict --scatter "EXTI_BAI4\EXTI_BAI4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTI_BAI4.map" -o EXTI_BAI4\EXTI_BAI4.axf

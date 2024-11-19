@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"flashled\startup_stm32f103xb.o"
+"flashled\main.o"
+"flashled\stm32f1xx_it.o"
+"flashled\stm32f1xx_hal_msp.o"
+"flashled\stm32f1xx_hal_gpio_ex.o"
+"flashled\stm32f1xx_hal_tim.o"
+"flashled\stm32f1xx_hal_tim_ex.o"
+"flashled\stm32f1xx_hal.o"
+"flashled\stm32f1xx_hal_rcc.o"
+"flashled\stm32f1xx_hal_rcc_ex.o"
+"flashled\stm32f1xx_hal_gpio.o"
+"flashled\stm32f1xx_hal_dma.o"
+"flashled\stm32f1xx_hal_cortex.o"
+"flashled\stm32f1xx_hal_pwr.o"
+"flashled\stm32f1xx_hal_flash.o"
+"flashled\stm32f1xx_hal_flash_ex.o"
+"flashled\stm32f1xx_hal_exti.o"
+"flashled\system_stm32f1xx.o"
+--strict --scatter "FlashLED\FlashLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FlashLED.map" -o FlashLED\FlashLED.axf

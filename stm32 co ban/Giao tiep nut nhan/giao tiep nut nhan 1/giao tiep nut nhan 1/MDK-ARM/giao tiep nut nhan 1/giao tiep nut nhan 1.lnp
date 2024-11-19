@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"giao tiep nut nhan 1\startup_stm32f103xb.o"
+"giao tiep nut nhan 1\main.o"
+"giao tiep nut nhan 1\stm32f1xx_it.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_msp.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_gpio_ex.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_tim.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_tim_ex.o"
+"giao tiep nut nhan 1\stm32f1xx_hal.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_rcc.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_rcc_ex.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_gpio.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_dma.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_cortex.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_pwr.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_flash.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_flash_ex.o"
+"giao tiep nut nhan 1\stm32f1xx_hal_exti.o"
+"giao tiep nut nhan 1\system_stm32f1xx.o"
+--strict --scatter "giao tiep nut nhan 1\giao tiep nut nhan 1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "giao tiep nut nhan 1.map" -o "giao tiep nut nhan 1\giao tiep nut nhan 1.axf"

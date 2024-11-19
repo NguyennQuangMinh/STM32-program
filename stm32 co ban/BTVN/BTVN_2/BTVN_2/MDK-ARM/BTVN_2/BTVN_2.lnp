@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"btvn_2\startup_stm32f103xb.o"
+"btvn_2\main.o"
+"btvn_2\stm32f1xx_it.o"
+"btvn_2\stm32f1xx_hal_msp.o"
+"btvn_2\stm32f1xx_hal_gpio_ex.o"
+"btvn_2\stm32f1xx_hal_tim.o"
+"btvn_2\stm32f1xx_hal_tim_ex.o"
+"btvn_2\stm32f1xx_hal.o"
+"btvn_2\stm32f1xx_hal_rcc.o"
+"btvn_2\stm32f1xx_hal_rcc_ex.o"
+"btvn_2\stm32f1xx_hal_gpio.o"
+"btvn_2\stm32f1xx_hal_dma.o"
+"btvn_2\stm32f1xx_hal_cortex.o"
+"btvn_2\stm32f1xx_hal_pwr.o"
+"btvn_2\stm32f1xx_hal_flash.o"
+"btvn_2\stm32f1xx_hal_flash_ex.o"
+"btvn_2\stm32f1xx_hal_exti.o"
+"btvn_2\system_stm32f1xx.o"
+--strict --scatter "BTVN_2\BTVN_2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTVN_2.map" -o BTVN_2\BTVN_2.axf
